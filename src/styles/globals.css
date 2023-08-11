@@ -25,3 +25,37 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.expandedAnimeAnimation { 
+  transition: all .4s ease;
+  animation: ExpandedAnimeAppears .4s ease-in-out;
+}
+
+@keyframes ExpandedAnimeAppears {
+  from { 
+    opacity: 0;
+  } 
+  to {
+    opacity: 1;
+  }
+}
+
+.formAppears { 
+  transition: all .4s ease;
+  animation: FormAppearsAnimation .4s ease-in-out;
+}
+
+@keyframes FormAppearsAnimation {
+  from { 
+    opacity: 0;
+    transform: scale(0.7);
+  } 
+  to {
+    opacity: 1;
+    transform: scale(1.0);
+  }
+}
+
+.bgPrimaryButton {
+  background: linear-gradient(134deg, #9181F4 0%, #5038ED 100%)!important;
+}
